@@ -1,0 +1,23 @@
+{
+  "name": "dynamicapp",
+  "version": "1.0.0",
+  "description": "KK",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kikrasnozhenov/dynamicApp.git"
+  },
+  "author": "Kirill Krasnozhenov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kikrasnozhenov/dynamicApp/issues"
+  },
+  "homepage": "https://github.com/kikrasnozhenov/dynamicApp#readme",
+  "dependencies": {
+    "hapi": "^16.6.0",
+    "inert": "^4.2.1"
+  }
+}
