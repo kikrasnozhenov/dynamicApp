@@ -13,15 +13,16 @@
 <body>
   <div class="wrapper">
     <div id="sidebar" class="left_bar">
-      <div class="bar_title">
+      <div id="main_nav" class="bar_title">
         <a href="#/">Main</a>
       </div>
-      <div class="nav_item">
+      <div id="nav_item" class="nav_item" tabindex="0">
         <a href="#/items">Overview</a>
       </div>
     </div>
   </div>
   <div ng-view></div>
   <script src="js/addItemCtrl.js"></script>
+  <script src="js/events.js"></script>
 </body>
 </html>

@@ -4,7 +4,7 @@
       Items
     </div>
     <form name="itemsFrm" ng-submit="addItem()" class="input_items_form">
-      <input name="newItem" ng-model="newItem" required class="form-control form">
+      <input name="newItem" ng-model="newItem" required class="form-control form_input">
       <button ng-disabled="itemsFrm.$invalid" ng-click="addItem()" class="btn btn-success add_btn">Add new</button>
     </form>
     <div ng-repeat="item in items" class="new_block">
@@ -18,14 +18,9 @@
     <div class="panels_title">
       Comments #2
     </div>
-    <div>
-      aaaaaaaaaaaaaaaaaaaaaaa
-    </div>
-    <div>
-      bbbbbbbbbbbbbbbbbbbbbbb
-    </div>
-    <div>
-      cccccccccccccccccccccccccc
-    </div>
+    <form name="CommentFrm" ng-submit="addComment()" class="form-group">
+      <span id="square">1</span>
+      <textarea name="newComment" ng-model="newComment" onkeypress="ctrlEnter()" class="form-control form_area" rows="5" id="comment"></textarea>
+    </form>
   </div>
 </div>

@@ -21,7 +21,7 @@ Side bar
     background: #31364a;
     color: #fff;
     float: left;
-    min-height: 800px;
+    min-height: 900px;
 }
 .bar_title {
     font-size: 2.3em;
@@ -31,7 +31,7 @@ Side bar
     overflow: hidden;
 }
 .nav_item {
-    background: #f92c47;
+    background: #31364a;
     padding: 20px;
     overflow: hidden;
     margin-bottom: 50px;
@@ -55,7 +55,24 @@ main content
     overflow: overlay;
     margin-bottom: 20px;
 }
-.form {
+
+/*------------------------------------
+Left panel
+--------------------------------------*/
+.left_panel {
+    float: left;
+}
+.new_block {
+    padding-bottom: 17px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #e0dbdb;
+}
+.new_item {
+    font-size: 1.4em;
+    font-weight: bold;
+    vertical-align: middle;
+}
+.form_input {
     width: 70% !important;
     display: inline-block !important;
     margin-right: 10px;
@@ -75,24 +92,22 @@ main content
     float: right;
     vertical-align: middle;
 }
-/*------------------------------------
-Left panel
---------------------------------------*/
-.left_panel {
-    float: left;
-}
-.new_block {
-    margin-bottom: 20px;
-}
-.new_item {
-    font-size: 1.4em;
-    font-weight: bold;
-    vertical-align: middle;
-}
+
 /*------------------------------------
 Right panel
 --------------------------------------*/
 .right_panel {
+    float: right;
+}
+#square {
+	color: #e0e0e0;
+	width: 5em;
+	height: 5em;
+	background: #e0e0e0;
+	display: inline-block;
+}
+.form_area {
+    width: 75% !important;
     float: right;
 }
 
