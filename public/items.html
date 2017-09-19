@@ -1,0 +1,31 @@
+<div class="content">
+  <div class="panels left_panel">
+    <div class="panels_title">
+      Items
+    </div>
+    <form name="itemsFrm" ng-submit="addItem()" class="input_items_form">
+      <input name="newItem" ng-model="newItem" required class="form-control form">
+      <button ng-disabled="itemsFrm.$invalid" ng-click="addItem()" class="btn btn-success add_btn">Add new</button>
+      <div ng-repeat="item in items">
+        {{item.title}}
+      </div>
+    </form>
+    <div ng-repeat="item in items" class="{'fadeOut' : skill.done}">>
+     {{item.title}}
+    </div>
+  </div>
+  <div class="panels right_panel">
+    <div class="panels_title">
+      Comments #2
+    </div>
+    <div>
+      aaaaaaaaaaaaaaaaaaaaaaa
+    </div>
+    <div>
+      bbbbbbbbbbbbbbbbbbbbbbb
+    </div>
+    <div>
+      cccccccccccccccccccccccccc
+    </div>
+  </div>
+</div>

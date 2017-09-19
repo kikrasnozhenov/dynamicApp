@@ -1,32 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="dApp">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8" />
   <title>Dynamic Application</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script data-require="angular.js@1.5.x" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.11/angular.min.js" data-semver="1.5.11"></script>
+  <script src="https://code.angularjs.org/1.5.7/angular-route.js"></script>
+  <script src="js/index.js"></script>
 </head>
 <body>
   <div class="wrapper">
     <div id="sidebar" class="left_bar">
       <div class="bar_title">
-        Main
+        <a href="#/">Main</a>
       </div>
       <div class="nav_item">
-        Overview
+        <a href="#/items">Overview</a>
       </div>
     </div>
   </div>
-  <div class="content">
-    <div class="panels left_panel">
-      left
-    </div>
-    <div class="panels right_panel">
-      right
-    </div>
-  </div>
+  <div ng-view></div>
+  <script src="js/addItemCtrl.js"></script>
 </body>
 </html>
