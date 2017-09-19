@@ -21,6 +21,7 @@ Side bar
     background: #31364a;
     color: #fff;
     float: left;
+    min-height: 800px;
 }
 .bar_title {
     font-size: 2.3em;
@@ -50,25 +51,43 @@ main content
     padding: 25px 15px;
 }
 .panels_title {
-    font-size: 2.3em;
+    font-size: 2.5em;
     overflow: overlay;
+    margin-bottom: 20px;
 }
 .form {
     width: 70% !important;
     display: inline-block !important;
     margin-right: 10px;
+    margin-bottom: 30px;
 }
 .add_btn {
     background-color: #48d0bc !important;
     border-radius: 2px !important;
     padding: 6px 25px !important;
 }
+.del_btn {
+    background-color: #ffffff !important;
+    border: 2px solid #f92c47 !important;
+    color: #f92c47 !important;
+    padding: 6px 25px !important;
+    vertical-align: middle !important;
+    float: right;
+    vertical-align: middle;
+}
 /*------------------------------------
 Left panel
 --------------------------------------*/
 .left_panel {
     float: left;
-
+}
+.new_block {
+    margin-bottom: 20px;
+}
+.new_item {
+    font-size: 1.4em;
+    font-weight: bold;
+    vertical-align: middle;
 }
 /*------------------------------------
 Right panel

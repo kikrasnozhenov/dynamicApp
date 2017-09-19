@@ -1,4 +1,4 @@
-angular.module('dApp', ['ngRoute'])
+var dApp = angular.module('dApp', ['ngRoute'])
 
   .config(['$routeProvider', function($routeProvider) {
     $routeProvider

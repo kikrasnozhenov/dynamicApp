@@ -6,12 +6,12 @@
     <form name="itemsFrm" ng-submit="addItem()" class="input_items_form">
       <input name="newItem" ng-model="newItem" required class="form-control form">
       <button ng-disabled="itemsFrm.$invalid" ng-click="addItem()" class="btn btn-success add_btn">Add new</button>
-      <div ng-repeat="item in items">
-        {{item.title}}
-      </div>
     </form>
-    <div ng-repeat="item in items" class="{'fadeOut' : skill.done}">>
-     {{item.title}}
+    <div ng-repeat="item in items" class="new_block">
+      <span class="new_item">
+        {{item.title}}
+      </span>
+      <button ng-click="deleteItem($index)" type="button" class="btn btn-success del_btn">Delete</button>
     </div>
   </div>
   <div class="panels right_panel">
