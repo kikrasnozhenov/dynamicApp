@@ -12,14 +12,16 @@
 </head>
 <body>
   <div class="wrapper">
-    <div id="sidebar" class="left_bar">
-      <div id="main_nav" class="bar_title">
-        <a href="#/">Main</a>
+    <a id="main_nav" href="#/">
+      <div class="bar_title">
+        Main
       </div>
+    </a>
+    <a href="#/items">
       <div id="nav_item" class="nav_item" tabindex="0">
-        <a href="#/items">Overview</a>
+        Overview
       </div>
-    </div>
+    </a>
   </div>
   <div ng-view></div>
   <script src="js/addItemCtrl.js"></script>
