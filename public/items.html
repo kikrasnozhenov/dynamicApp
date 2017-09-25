@@ -8,19 +8,24 @@
       <button ng-disabled="itemsFrm.$invalid" ng-click="addItem()" class="btn btn-success add_btn">Add new</button>
     </form>
     <div ng-repeat="item in items" class="new_block">
-      <span class="new_item">
+      <a href="#/" class="new_item">
         {{item.title}}
-      </span>
+      </a>
       <button ng-click="deleteItem($index)" type="button" class="btn btn-success del_btn">Delete</button>
     </div>
   </div>
   <div class="panels right_panel">
     <div class="panels_title">
-      Comments #2
+      Comments #
     </div>
-    <form name="CommentFrm" ng-submit="addComment()" class="form-group">
+    <form name="CommentFrm" ng-submit="onkeyup()" class="form-group">
+      <div ng-repeat="comment in comments" class="new_block">
+          <span id="square">1</span>
+          <span class="new_comment">
+            {{comment.comment}}
+          </span>
+      </div>
       <span id="square">1</span>
-      <textarea name="newComment" ng-model="newComment" onkeypress="ctrlEnter()" class="form-control form_area" rows="5" id="comment"></textarea>
+      <textarea name="newComment" ng-model="newComment" ng-keypress="($event.charCode==13)? addComment() : return" class="form-control form_area" rows="5"></textarea>
     </form>
-  </div>
 </div>
